@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
+
 import 'reusable_card.dart';
 
-class frontPage extends StatefulWidget {
+class FrontPage extends StatefulWidget {
+  const FrontPage({super.key});
+
   @override
-  State<frontPage> createState() => _frontPageState();
+  State<FrontPage> createState() => _FrontPageState();
 }
 
-class _frontPageState extends State<frontPage> {
+class _FrontPageState extends State<FrontPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF1D1E33),
-        title: Text('Urban Trails'),
+        backgroundColor: const Color(0xFF1D1E33),
+        title: const Text('Urban Trails'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -22,38 +25,38 @@ class _frontPageState extends State<frontPage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Expanded(
-                child: Reusable_card(
-                  colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                  colour: const Color(0xFF1D1E33),
                   onPress: () {},
                   cardChild: Container(
                     alignment: Alignment.center,
-                    child: Text('All'),
+                    child: const Text('All'),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10.0,
               ),
               Expanded(
-                child: Reusable_card(
-                  colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                  colour: const Color(0xFF1D1E33),
                   onPress: () {},
                   cardChild: Container(
                     alignment: Alignment.center,
-                    child: Text('Cars'),
+                    child: const Text('Cars'),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10.0,
               ),
               Expanded(
-                child: Reusable_card(
-                  colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                  colour: const Color(0xFF1D1E33),
                   onPress: () {},
                   cardChild: Container(
                     alignment: Alignment.center,
-                    child: Text('Two-weelers'),
+                    child: const Text('Two-weelers'),
                   ),
                 ),
               )
@@ -63,54 +66,25 @@ class _frontPageState extends State<frontPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
               ),
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
-                      ],
-                    ),
-                    onPress: () {}),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
-                    cardChild: Column(
-                      children: [
-                        Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
-                      ],
-                    ),
-                    onPress: () {}),
-              ),
-              Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
-                    cardChild: Column(
-                      children: [
-                        Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
@@ -121,25 +95,25 @@ class _frontPageState extends State<frontPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
               ),
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
@@ -150,25 +124,54 @@ class _frontPageState extends State<frontPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
               ),
               Expanded(
-                child: Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Column(
                       children: [
                         Image.asset('images/ntorq.jpg'),
-                        Text('Ntorq'),
-                        Text('400/day'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
+                      ],
+                    ),
+                    onPress: () {}),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Expanded(
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
+                    cardChild: Column(
+                      children: [
+                        Image.asset('images/ntorq.jpg'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
+                      ],
+                    ),
+                    onPress: () {}),
+              ),
+              Expanded(
+                child: ReusableCard(
+                    colour: const Color(0xFF1D1E33),
+                    cardChild: Column(
+                      children: [
+                        Image.asset('images/ntorq.jpg'),
+                        const Text('Ntorq'),
+                        const Text('400/day'),
                       ],
                     ),
                     onPress: () {}),
@@ -179,34 +182,34 @@ class _frontPageState extends State<frontPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Container(
-                      child: Icon(
+                      child: const Icon(
                         Icons.home,
                       ),
                     ),
                     onPress: () {}),
-                Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Container(
-                      child: Icon(
+                      child: const Icon(
                         Icons.search,
                       ),
                     ),
                     onPress: () {}),
-                Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Container(
-                      child: Icon(
+                      child: const Icon(
                         Icons.favorite,
                       ),
                     ),
                     onPress: () {}),
-                Reusable_card(
-                    colour: Color(0xFF1D1E33),
+                ReusableCard(
+                    colour: const Color(0xFF1D1E33),
                     cardChild: Container(
-                      child: Icon(
+                      child: const Icon(
                         Icons.person,
                       ),
                     ),

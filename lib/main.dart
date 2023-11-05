@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
+
 import 'front_page.dart';
 
 void main() {
   runApp(
-    Urban_Trails(),
+    const UrbanTrails(),
   );
 }
 
-class Urban_Trails extends StatelessWidget {
+class UrbanTrails extends StatelessWidget {
+  const UrbanTrails({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: frontPage(),
+      home: FrontPage(),
       theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF0A0E21),
-        scaffoldBackgroundColor: Color(0xFF0A0E21),
+        primaryColor: const Color(0xFF0A0E21),
+        scaffoldBackgroundColor: const Color(0xFF0A0E21),
       ),
     );
   }
